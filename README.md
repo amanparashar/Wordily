@@ -1,3 +1,14 @@
 # Wordily
-/Users/aman/Desktop/Screen Shot 2016-10-04 at 9.23.45 am.png
-/Users/aman/Desktop/Screen Shot 2016-10-04 at 9.24.15 am.png
+
+Description: 
+
+Wordily is a  text editor with support of Multiple features:
+
+1. File saving and editing
+
+2. Font change and Bold italic and undeline
+
+3. Typing Tutor which highlights the pressed keys by acting as a virtual keyboard.
+
+4. Spell Checker
+
