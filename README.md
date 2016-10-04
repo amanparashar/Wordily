@@ -13,8 +13,16 @@ Wordily is a  text editor with support of Multiple features:
 4. Spell Checker
 
 
+Images: 
+  The Editor looks like this: 
+ ![alt tag](https://github.com/amanparashar/Wordily/blob/master/The_Editor.png)
+ 
+  The typingtutor is this:  
+ ![alt tag](https://github.com/amanparashar/Wordily/blob/master/Typing_tutor.png)
 
-Run: 
 
-To access the jar file go to dist/wordily.jar and run the jar file.
+Runnig the project:
+ 
+Go to dist folder and follow the instructions.
+It contains a jar file of the program.
 
