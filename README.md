@@ -12,3 +12,9 @@ Wordily is a  text editor with support of Multiple features:
 
 4. Spell Checker
 
+
+
+Run: 
+
+To access the jar file go to dist/wordily.jar and run the jar file.
+
