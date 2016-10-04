@@ -37,7 +37,7 @@ Setting up the project:
 
 3. Download Mysql server and create database Words. 
 
-4. Run db.sql  and this will create the required database of dictionary words. 
+4. Import dump file  db.sql in the database Words and this will create the required tables in the database.
 
 5. Now go to Services and right click databases and create New Connection. 
    -> select host at localhost  and port:3306
