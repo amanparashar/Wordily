@@ -1,27 +1,16 @@
 package trie;
 
 import java.util.*;//input output
- 
 
-class TrieNode 
+class TrieNode {
 
-{
-
-    char content; 
-
-    boolean isEnd; 
-
-    int count;  
-
-    LinkedList<TrieNode> childList; 
-
- 
+    char content;
+    boolean isEnd;
+    int count;
+    LinkedList<TrieNode> childList;
 
     /* Constructor */
-
-    public TrieNode(char c)
-
-    {
+    public TrieNode(char c) {
 
         childList = new LinkedList<TrieNode>();
 
@@ -31,75 +20,54 @@ class TrieNode
 
         count = 0;
 
-    }  
+    }
 
-    public TrieNode subNode(char c)
+    public TrieNode subNode(char c) {
 
-    {
-
-        if (childList != null)
-
-            for (TrieNode eachChild : childList)
-
-                if (eachChild.content == c)
-
+        if (childList != null) {
+            for (TrieNode eachChild : childList) {
+                if (eachChild.content == c) {
                     return eachChild;
+                }
+            }
+        }
 
         return null;
 
     }
-
 }
 
- 
-
-public class Trie
-
-{
+public class Trie {
 
     private TrieNode root;
 
- 
+    /* Constructor */
+    public Trie() {
 
-     /* Constructor */
-
-    public Trie()
-
-    {
-
-        root = new TrieNode(' '); 
+        root = new TrieNode(' ');
 
     }
 
-     /* Function to insert word */
+    /* Function to insert word */
+    public void insert(String word) {
 
-    public void insert(String word)
+        if (search(word) == true) {
+            return;
+        }
 
-    {
+        TrieNode current = root;
 
-        if (search(word) == true) 
-
-            return;        
-
-        TrieNode current = root; 
-
-        for (char ch : word.toCharArray() )
-
-        {
+        for (char ch : word.toCharArray()) {
 
             TrieNode child = current.subNode(ch);
 
-            if (child != null)
-
+            if (child != null) {
                 current = child;
+            } else {
 
-            else 
+                current.childList.add(new TrieNode(ch));
 
-            {
-
-                 current.childList.add(new TrieNode(ch));
-
-                 current = current.subNode(ch);
+                current = current.subNode(ch);
 
             }
 
@@ -112,30 +80,23 @@ public class Trie
     }
 
     /* Function to search for word */
+    public boolean search(String word) {
 
-    public boolean search(String word)
+        TrieNode current = root;
 
-    {
+        for (char ch : word.toCharArray()) {
 
-        TrieNode current = root;  
-
-        for (char ch : word.toCharArray() )
-
-        {
-
-            if (current.subNode(ch) == null)
-
+            if (current.subNode(ch) == null) {
                 return false;
-
-            else
-
+            } else {
                 current = current.subNode(ch);
+            }
 
-        }      
+        }
 
-        if (current.isEnd == true) 
-
+        if (current.isEnd == true) {
             return true;
+        }
 
         return false;
 
