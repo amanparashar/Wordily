@@ -8,7 +8,7 @@ public class db {
 	{
 	Class.forName("com.mysql.jdbc.Driver");    //sql driver of jdbc
 	String CONNECT="jdbc:mysql://localhost:3306/words";   //local host ip adreess
-	Properties p=new Properties();    //user na and password dalne ke lie
+	Properties p=new Properties();    //For user name and password
 	p.put("user", "root");
 	p.put("password", "");
 	Connection c=	DriverManager.getConnection(CONNECT, p);  //this is making a connection
