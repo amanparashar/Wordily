@@ -2,7 +2,6 @@ package document;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
 import java.awt.GraphicsEnvironment;

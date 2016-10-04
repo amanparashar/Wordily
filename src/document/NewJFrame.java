@@ -2,10 +2,6 @@ package document;
 
 import java.awt.Color;
 
-import javax.swing.JTextArea;
-
-import document.Document;
-
 @SuppressWarnings("unused")
 public class NewJFrame extends javax.swing.JFrame {
 	
